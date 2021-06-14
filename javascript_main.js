@@ -569,7 +569,6 @@ function reset(){
            document.getElementById("bubble").style.backgroundColor =  'transparent';
            document.getElementById("selection").style.backgroundColor =  'transparent';
            document.getElementById("insertion").style.backgroundColor =  'transparent';
-        //    document.getElementById("merge").style.backgroundColor =  'transparent';
            document.getElementById("heap").style.backgroundColor = "transparent";
            document.getElementById("quick").style.backgroundColor =  'transparent';
            k1 = document.getElementsByClassName('showing');
