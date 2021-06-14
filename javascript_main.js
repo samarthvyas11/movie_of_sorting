@@ -569,11 +569,14 @@ function reset(){
            document.getElementById("bubble").style.backgroundColor =  'transparent';
            document.getElementById("selection").style.backgroundColor =  'transparent';
            document.getElementById("insertion").style.backgroundColor =  'transparent';
-           document.getElementById("merge").style.backgroundColor =  'transparent';
+        //    document.getElementById("merge").style.backgroundColor =  'transparent';
            document.getElementById("heap").style.backgroundColor = "transparent";
            document.getElementById("quick").style.backgroundColor =  'transparent';
            k1 = document.getElementsByClassName('showing');
-           k1[0].innerHTML = "";       
+           k1[0].innerHTML = ""; 
+           k2 = document.getElementsByClassName("totalswaps")  
+           k2[0].innerHTML = '<h2>Total swaps = ' + (0).toString() + '</h2>'
+
            
 }
 
