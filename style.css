@@ -1,0 +1,227 @@
+  
+      body {
+        margin:0; 
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden;
+}
+
+       .container{
+            height: 100vh;
+            width: 100vw;
+            margin: 0%;
+            padding: 0%;
+            background-color: darkgrey;
+        }
+        .touch{
+            background-color:lightblue;
+            text-align: center;
+            width: 10%;
+            height: 2%;
+            margin: 3%;
+            padding: 1%;
+            border-radius: 17px;
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+		
+      .touch:hover{
+
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+
+        .number{
+          width: 100%;
+          border-radius: 18px;
+          padding: 2%;
+          background-color: darkseagreen;
+          border-style: dashed;
+          margin: 1%;
+          display: flex;
+          justify-content: center;
+        }
+        .number1{
+          width: 100%;
+          border-radius: 18px;
+          padding: 2%;
+          background-color: darkseagreen;
+          border-style: dashed;
+          margin: 1%;
+          display: flex;
+          justify-content: center;
+            visibility: hidden;
+
+        }.showing{
+            margin-top: 20px;
+            overflow: auto;
+        }
+
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 15px 30px;
+}
+
+.header h1{
+color: beige;
+font-size: 25px;
+margin-left: 0.7%;
+font-family: Comic Sans MS;
+
+}
+
+.header h1::first-letter {
+  font-size: 150%;
+  
+  }
+
+.header .logo-image{
+	  float:left;
+	 margin-left:0.05%;
+	 margin-top:1%;
+	  } 
+
+.header p{
+  color: beige; 
+  font-size: 17px;
+  text-shadow: 1px 1px 1px beige;
+  position: relative;
+    top: 10%; 
+    left: 35%; 
+}
+
+.header a {
+  float: left;
+  color:beige ;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header a:hover {
+  color:peru;
+  border-bottom: double 3.1px;
+  letter-spacing: 0.5px;
+  
+}
+
+.header a:active{
+    color:peru;
+    background-color:black;
+}
+
+
+
+/*    Range Slider ------------------------------------------------------*/
+.range{
+  height: 30px;
+  width: 15%;
+  background:whitesmoke;
+  border-radius: 10px;
+  margin-top:0.1%;
+  padding: 0 65px 0 45px;
+  float:right;
+
+}
+.range .sliderValue{
+  position:relative;
+  width:100%;
+}
+.range .sliderValue span{
+  position: absolute;
+  height:45px;
+  width:380px;
+  color: black;
+  font-weight: 500;
+  top: -40px;
+  transform: translateX(-50%) scale(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease-in-out;
+  line-height: 55px;
+  z-index: 2;
+}
+.range .sliderValue span.show{
+  transform: translateX(-50%) scale(1);
+}
+
+.range .field{
+  position:relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.range .field .value{
+  position:absolute;
+  font-size:18px;
+  font-weight:600;
+  color: black;
+}
+.range .field .value.left{
+  left: -22px;
+  color:black;
+}
+.range .field .value.right{
+  right: -43px;
+  color:black;
+}
+.range .field input{
+  -webkit-appearance: none;
+  height:3px;
+  background:black;
+  border-radius: 5px;
+  outline:none;
+  border:none;
+  width:100%;
+}
+.range .field input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: black;
+  border-radius: 50%;
+  border: 1px solid #664AFF;
+  cursor: pointer;
+}
+
+
+/* -------------------------------------------------------------------------*/
+
+
+
+
+@media screen and (max-width: 500px) {
+  body{
+    overflow-y: visible;
+  }
+  
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+    overflow: none;
+  }
+  .range{
+  float:left;
+  
+  }
+  
+  .header p{
+  font-size: 15px;
+  position: relative;
+    top: 7px; 
+    left: 2%; 
+  }
+   
+.header .logo-image{
+	  float:left;
+	 margin-left:0.05%;
+	 margin-top:3%;
+	  } 
+}
+.totalswaps{
+    width: 100%;
+}

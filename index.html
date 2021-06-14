@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie of Sorting</title>
+	<link rel="icon" href="icon1.jpeg">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body >
+    <div class="container">
+        
+        
+        <div class="header">
+		   <div class="logo-image">
+            <img src="icon2.png" width="60" height="60" style="background-color: black;">
+			
+      </div>
+		
+          <h1> Sorting Algorithm Analysis</h1>
+           
+           <a id="bubble" onclick="bubble_called();">Bubble Sort</a>
+            <a id="selection" onclick="selection_called();">Selection Sort</a>
+            <a id="insertion" onclick="insertion_called();">Insertion Sort</a>
+            <!--<a id="merge" onclick="merge_called();">Merge Sort</a>-->
+            <a id="heap" onclick="heap_called();">Heap Sort</a>
+            <a id="quick" onclick="quick_called();">Quick Sort</a>
+            <a onclick="reset()">Reset</a>
+
+              <p>Change Sorting Speed</p>
+			  
+			  
+			  
+            <!-------Range Slider------------------------------------------------------------>
+            <div class="range">
+                <div class="sliderValue">
+                  <span style="color: whitesmoke;">10</span>
+                </div>
+                <div class="field">
+                  <div class="value left">1</div>
+                  <input type="range" min="1" max="10" value="10" steps="1">
+                  <div class="value right">10</div>
+                </div>
+              </div>
+
+          </div>
+          <div class="push" style="display: flex;width: 100%;margin-left: 20px;margin-top: 20px;">
+            <h3>Array </h3>
+            <input type="text" value="" id="array_element" style="border-radius: 6px;border-radius: 17px;
+            width: 29%;
+            margin-top: 7px;
+            margin-left: 10px;
+            height: 38px;">
+          <div class="touch" style="margin-top: 2px;" onclick="do_sort()"> Start </div>
+          <div class="totalswaps">
+              
+          </div>
+       </div>
+
+      
+    <div class="box1">
+        <div class="showing" >
+        
+        </div>
+    </div>
+
+    </div>
+    <script type="text/javascript" src="javascript_main.js"></script>
+	
+</body>
+</html>
