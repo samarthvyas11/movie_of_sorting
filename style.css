@@ -197,6 +197,13 @@ font-family: Comic Sans MS;
   body{
     overflow-y: visible;
   }
+  .container{
+    height: 130vh;
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    background-color: darkgrey;
+}
   
   .header a {
     float: none;

@@ -67,17 +67,12 @@ let size = 0;
 	   */
 
 
-        function size_array(){
-            size = document.getElementById('size_of_array').value;
-            console.log(size)
-        }
 
         function elm_array(){
             let values_string = document.getElementById('array_element').value
             array.splice(0, array.length)
             array_copy.splice(0, array_copy.length)
             values_string += ",";
-            console.log(values_string)
             let j = 0 ;
             num = "";
             let tota_number = 0
@@ -106,8 +101,7 @@ let size = 0;
 
 
     async function start_array()
-      {   console.log("start")
-          console.log(array_copy) 
+      {  
           box = '<show style="display: flex;" class="show_num">'
             for(let z = 0 ;z < size;z++){
                 box += '<div class="number1">1</div>'}
@@ -202,7 +196,6 @@ let size = 0;
             let c = array_copy[swaps[i][0]]
             array_copy[swaps[i][0]] = array_copy[swaps[i][1]]
             array_copy[swaps[i][1]] = c
-            console.log(array_copy)
             box = '<show style="display: flex;" class="show_num">'
             for(let z = 0 ;z < size;z++){
                 box += '<div class="number1">1</div>'}
@@ -278,8 +271,7 @@ let size = 0;
        }
 
         function bubble_sort(){
-            console.log("before")
-            console.log(array)
+            
           for(let i = 0;i<size;i++)
            {
                for(let j = 0;j<size-1;j++)
@@ -293,9 +285,7 @@ let size = 0;
                }
            }
            start_array();
-           console.log("completed")
-           console.log(array)
-           console.log(array_copy)
+          
        }
 
        function selection_sort()
@@ -338,53 +328,12 @@ let size = 0;
                     
                 } 
             } 
-            console.log(swaps)
+            
             start_array();
         
        }
 
-    // function heap_sort(){
-    //     var n = size
-    //     for (var i = n / 2 - 1; i >= 0; i--)
-    //         heapify(array, n, i);
- 
-       
-    //     for (var i = n - 1; i > 0; i--) {
-    //         swaps.push([0,i]);
-    //         var temp = array[0];
-    //         array[0] = array[i];
-    //         array[i] = temp;
-    //         heapify(array, i, 0);
-    //     }
-    //     start_array();
-    // }
-       
-
-    //    function heapify(arr, n, i)
-    // {
-    //     var largest = i; 
-    //     var l = 2 * i + 1; 
-    //     var r = 2 * i + 2;
- 
-        
-    //     if (l < n && arr[l] > arr[largest])
-    //         largest = l;
- 
-        
-    //     if (r < n && arr[r] > arr[largest])
-    //         largest = r;
- 
-        
-    //     if (largest != i) {
-    //         swaps.push([i,largest])
-    //         var swap = arr[i];
-    //         arr[i] = arr[largest];
-    //         arr[largest] = swap;
- 
-            
-    //         heapify(arr, n, largest);
-    //     }
-    // }
+   
 
     var array_length;
  
@@ -561,7 +510,6 @@ function mergeSort(array,l, r){
     merge(array,l,m,r);
 }
 function reset(){
-    console.log("lo hum aagye")
     array.splice(0, array.length)
     array_copy.splice(0, array_copy.length)
     size = array.length;
@@ -585,7 +533,6 @@ const sliderValue = document.querySelector("span");
     const inputSlider = document.querySelector("input");
     inputSlider.oninput = (() =>{
    let value = inputSlider.value;
-   console.log("valueee")
    speed = (500*(10.2) - 500*value)
    sliderValue.textContent = value;
    sliderValue.style.left = (value*10) + "%";
