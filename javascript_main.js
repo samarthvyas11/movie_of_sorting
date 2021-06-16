@@ -11,6 +11,14 @@ let size = 0;
             
        function bubble_called(){
            sort_type = "Bubble";
+           information = '<div class="inner-info" style="display: flex;"><div><br><hr style="width:80%;"><br><h2 style="margin-left:15%;font-size:180%; ">Bubble Sort</h2><p>Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list. Although the algorithm is simple, it is too slow and impractical for most problems</p><h3 style="margin-left:15%; font-size:160%;">Performance</h3><table style="margin-left:15%; font-size:120%;"><tbody><tr><td>Worst-case time complexity</td><td>O(n^2)</td></tr><tr><td>Average-case time complexity</td><td>O(n^2)</td></tr><tr><td>Best-case time complexity</td><td>O(n)</td></tr><tr><td>Worst-case-space time complexity</td><td>O(1)</td></tr></tbody></table><br>  <br><hr style="width:80%;"><br></div><div style="margin-top: 100px;"><img src="logo.png" class="img1" style="width: 361px;margin-right: 38px;"></div>  </div>';
+		                  
+		   
+           info = document.getElementsByClassName("information");
+           info[0].innerHTML = information;
+		   
+		   
+
            document.getElementById("bubble").style.backgroundColor = "blueviolet";
            document.getElementById("selection").style.backgroundColor = 'transparent';
            document.getElementById("insertion").style.backgroundColor =  'transparent';
@@ -20,6 +28,9 @@ let size = 0;
        }
        function selection_called(){
            sort_type = "Selection";
+           information = '<div class="inner-info" style="display: flex;"><div><br><hr style="width:80%;"><br><h2 style="margin-left:15%;font-size:180%; ">Selection Sort</h2><p>Selection Sort is an in-place comparison sorting algorithm that divides the input list into two parts: the sublist of items already sorted, which is built up from left to right at the front (left) of the list, and the sublist of items remaining to be sorted that occupy the rest of the list. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest element in the unsorted sublist, exchanging (swapping) it with the leftmost unsorted element (putting it in sorted order), and moving the sublist boundaries one element to the right.</p><h3 style="margin-left:15%; font-size:160%;">Performance</h3><table style="margin-left:15%; font-size:120%;"><tbody><tr><td>Worst-case time complexity</td><td>O(n^2)</td></tr><tr><td>Average-case time complexity</td><td>O(n^2)</td></tr><tr><td>Best-case time complexity</td><td>O(n^2)</td></tr><tr><td>Worst-case-space time complexity</td><td>O(1)</td></tr></tbody></table><br>  <br><hr style="width:70%;"><br><br><br></div><div style="margin-top: 100px;"><img src="logo1.png" class="img1" style="width: 361px;margin-right: 38px;"></div>  </div>';
+           info = document.getElementsByClassName("information");
+           info[0].innerHTML = information;
            document.getElementById("bubble").style.backgroundColor =  'transparent';
            document.getElementById("selection").style.backgroundColor = "blueviolet";
            document.getElementById("insertion").style.backgroundColor =  'transparent';
@@ -29,6 +40,9 @@ let size = 0;
        }
        function insertion_called(){
            sort_type = "Insertion";
+           information = '<div class="inner-info" style="display: flex;"><div><br><hr style="width:80%;"><br><h2 style="margin-left:15%;font-size:180%; ">Insertion Sort</h2><p>Insertion Sort is a simple sorting algorithm that iterates through an array and at each iteration it removes one element from the array, finds the location it belongs to in the sorted list and inserts it there, repeating until no elements remain in the unsorted list. It is an in-place, stable sorting algorithm that is inefficient on large input arrays but works well for data sets that are almost sorted. It is more efficient in practice compared to other quadratic sorting algorithms like bubble sort and selection sort.</p><h3 style="margin-left:15%; font-size:160%;">Performance</h3><table style="margin-left:15%; font-size:120%;"><tbody><tr><td>Worst-case time complexity</td><td>O(n^2)</td></tr><tr><td>Average-case time complexity</td><td>O(n^2)</td></tr><tr><td>Best-case time complexity</td><td>O(n)</td></tr><tr><td>Worst-case-space time complexity</td><td>O(1)</td></tr></tbody></table><br>  <br><hr style="width:70%;"><br><br><br></div><div style="margin-top: 100px;"><img src="logo.png"class="img1" style="width: 361px;margin-right: 38px;"></div>  </div>';
+           info = document.getElementsByClassName("information");
+           info[0].innerHTML = information;
            document.getElementById("bubble").style.backgroundColor =  'transparent';
            document.getElementById("selection").style.backgroundColor =  'transparent';
            document.getElementById("insertion").style.backgroundColor = "blueviolet";
@@ -38,6 +52,9 @@ let size = 0;
        }
        function heap_called(){
            sort_type = "Heap";
+           info = document.getElementsByClassName("information");
+           information = '<div class="inner-info" style="display: flex;"><div><h2 style="margin-left:15%;font-size:180%; ">Heap Sort</h2><p>Heap sort is a comparison-based sorting technique based on Binary Heap data structure. It is similar to selection sort where we first find the minimum element and place the minimum element at the beginning. We repeat the same process for the remaining elements. </p><h3 style="margin-left:15%; font-size:160%;">Performance</h3><table style="margin-left:15%; font-size:120%;"><tbody><tr><td>Worst-case time complexity</td><td>O(nlogn)</td></tr><tr><td>Average-case time complexity</td><td>O(nlogn)</td></tr><tr><td>Best-case time complexity</td><td>O(nlogn)</td></tr><tr><td>Worst-case-space time complexity</td><td>O(1)</td></tr></tbody></table><br>  <br><hr style="width:70%;"><br><br><br></div><div style="margin-top: 100px;"><img src="logo1.png" class="img1" style="width: 361px;margin-right: 38px;"></div>  </div>';
+           info[0].innerHTML = information;
            document.getElementById("bubble").style.backgroundColor =  'transparent';
            document.getElementById("selection").style.backgroundColor =  'transparent';
            document.getElementById("insertion").style.backgroundColor =  'transparent';
@@ -47,6 +64,9 @@ let size = 0;
        }
        function quick_called(){
            sort_type = "Quick";
+           information = '<div class="inner-info" style="display: flex;"><div><br><hr style="width:80%;"><h2 style="margin-left:15%;font-size:180%; ">Quick Sort</h2><p>Quick Sort is an efficient, in-place sorting algorith that in practice is faster than MergeSort and HeapSort. However, it is not a stable sorting algorithm, meaning that the relative positioning of equal sort items is not preserved.Quicksort is a divide and conquer algorithm. Quicksort first divides a large array into two smaller sub-arrays: the low elements and the high elements. Quicksort can then recursively sort the sub-arrays. The steps are:<br>1.Pick an element, called a pivot, from the array. This is usually done at random.<br>2.Move pivot element to the start of the array.<br>3.Partitioning: reorder the array so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position. This is called the partition operation.<br><br>Recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values.<br>The base case of the recursion is an array of size zero or one, which are sorted by definition.</p><h3 style="margin-left:15%; font-size:160%;">Performance</h3><table style="margin-left:15%; font-size:120%;"><tbody><tr><td>Worst-case time complexity</td><td>O(N*N)</td></tr><tr><td>Average-case time complexity</td><td>O(NlogN)</td></tr><tr><td>Best-case time complexity</td><td>O(NlogN)</td></tr><tr><td>Worst-case-space time complexity</td><td>O(logN)</td></tr></tbody></table><br>  <br><hr style="width:70%;"><br></div><div style="margin-top: 100px;"><img src="logo.png" class="img1" style="width: 361px;margin-right: 38px;"></div>  </div>';
+           info = document.getElementsByClassName("information");
+           info[0].innerHTML = information;
            document.getElementById("bubble").style.backgroundColor =  'transparent';
            document.getElementById("selection").style.backgroundColor =  'transparent';
            document.getElementById("insertion").style.backgroundColor =  'transparent';
@@ -523,6 +543,8 @@ function reset(){
            k1[0].innerHTML = ""; 
            k2 = document.getElementsByClassName("totalswaps")  
            k2[0].innerHTML = '<h2>Total swaps = ' + (0).toString() + '</h2>'
+           info = document.getElementsByClassName("information");
+           info[0].innerHTML = "";
 
            
 }
